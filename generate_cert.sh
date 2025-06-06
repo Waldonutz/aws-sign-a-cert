@@ -1,12 +1,10 @@
 #!/bin/bash
 
 # Script to generate and retrieve a signed certificate from the subordinate CA
-# Author: Amazon Q
-# Date: 2025-06-06
 
 # Configuration variables - modify these to match your environment
-AWS_REGION="ap-southeast-2"  # Change to your AWS region
-SUB_CA_ARN=""                # Add your Subordinate CA ARN here
+AWS_REGION=""  # Change to your AWS region
+SUB_CA_ARN=""                # Add your Subordinate CA ARN here, again add root CA if you really want 
 
 # Check if a CSR file was provided
 if [ $# -ne 1 ]; then
